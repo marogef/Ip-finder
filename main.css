@@ -1,0 +1,25 @@
+body {
+    color: #878787;
+    margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: 'Abolition Regular', Halvetica, Arial, sans-serrif;
+}
+
+h1 {
+    font-size: 1.625rem;
+    margin: 12px 0;
+}
+
+h2 {
+    font-size: 3.3125rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: #48525c;
+}
