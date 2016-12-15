@@ -1,7 +1,9 @@
 body {
-    color: #878787;
+    color: #133006;
     margin: 0;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url('key.jpg');
+    background-size: cover;
 }
 
 h1,

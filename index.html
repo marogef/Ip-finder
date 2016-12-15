@@ -7,33 +7,32 @@
     <meta name="viewport" content="width=device-width">
 </head>
 
-
 <body>
-
     <header>
         <span class="title"> Find where your computer is located</span>
         <h1> Type in where you can find your computer so rest easy</h1>
     </header>
-
     <section class="primary">
         <p>We can help you find your computer location. You just need to provide us with the ip information.</p>
-
+        <!--create the form and the button to search for the ip address-->
+        <form id="ip-search">
+            <input id="search-input" type="text" placeholder="Enter value">
+            <input type="submit" value="Search">
+        </form>
     </section>
-
-
-
     <section class="secondary">
         <h3>Your computer is the most valuable thing.</h3>
         <p>
             The most important thing is that we should take care of your computer and you should never leave it alone.
         </p>
     </section>
-
     <footer class="main-footer">
         <p>We are on your side.</p>
         <a href="#top">Back to top &raquo;</a>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="ip.js"></script>
 </body>
 
 </html>
