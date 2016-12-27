@@ -1,16 +1,12 @@
+* {
+    margin: 0px;
+}
+
 body {
-    color: #133006;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin: 0px 0px 0px 10px;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url('stone.jpg.png');
     background-size: cover;
-    background-color: aqua;
-    /*                                            background-repeat: no-repeat;*/
-}
-
-header {
-    margin: 0px 0px 0px 0px;
 }
 
 title {
@@ -18,6 +14,32 @@ title {
     font-size: 1.625rem;
     letter-spacing: .075em;
     font-weight: 200;
+}
+
+nav {
+    background: #184F36;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-weight: 800;
+    color: #b37c57;
+    padding: 15px 10px;
+}
+
+nav a:visited {
+    color: #fff;
+}
+
+nav a.selected,
+nav a:hover {
+    color: #b37c57;
 }
 
 header p {
@@ -42,9 +64,6 @@ header p {
     background-size: cover;
 }
 
-h1,
-h2 {}
-
 h1 {
     font-size: 1.625rem;
     font-family: 'Abolition Regular', Halvetica, Arial, sans-serrif;
@@ -58,32 +77,6 @@ h2 {
 h3 {
     font-size: 1.25em;
     color: #48525c;
-}
-
-nav {
-    background: #184F36;
-    height: 30px;
-    padding-top: 10px;
-    /*                                margin: 500px;*/
-}
-
-nav li {
-    display: inline-block;
-}
-
-nav a {
-    font-weight: 800;
-    color: #b37c57;
-    padding: 15px 10px;
-}
-
-nav a:visited {
-    color: #fff;
-}
-
-nav a.selected,
-nav a:hover {
-    color: #b37c57;
 }
 
 .main-footer {
@@ -110,14 +103,11 @@ nav a:hover {
 }
 
 .map {
-    /*                                max-width: 640px;
-                                */
     border-collapse: collapse;
     border-spacing: 0;
     color: chartreuse;
     height: 200px;
     width: 20em;
-    /*                                margin-top: 20px;*/
     position: relative;
     left: 950px;
     bottom: 360px;
@@ -135,10 +125,12 @@ nav a:hover {
     background-color: bisque;
     color: darkcyan;
     height: 200px;
-    width: 20em;
+    width: 30em;
     position: relative;
-    left: 0px;
+    left: 400px;
     bottom: 600px;
+    margin-top: 150px;
+    border: 5px dashed RGB(37, 16, 161);
 }
 
 tr:first-child {
@@ -170,6 +162,36 @@ tr {
     width: 400px;
     height: 300px;
     border: 5px black solid;
+}
+
+.secondary-content {
+    padding-top: 80px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid #dfe2e6;
+    width: 75%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+    color: RGB(251, 255, 254);}
+
+.firstpart,
+.secondpart {
+    width: 46.5%;
+}
+
+.firstpart {
+    float: left;
+}
+
+.secondpart {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 @media (max-width: 760px) {

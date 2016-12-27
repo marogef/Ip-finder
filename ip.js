@@ -37,55 +37,17 @@ $(document).ready(function () {
 
         //Use the searchValue to get the details on the user input IP
         $.getJSON('http://ipinfo.io/' + searchValue + '/json', function (data) {
-
             //add values to the table dynamically
             //declare a variable tr and populate it
             var htmlOutput = "";
-            htmlOutput += "<li>" + data.ip + "</li>";
-            htmlOutput += "<li>" + data.hostname + "</li>";
-            htmlOutput += "<li>" + data.city + "</li>";
-            htmlOutput += "<li>" + data.region + "</li>";
-            htmlOutput += "<li>" + data.country + "</li>";
-            htmlOutput += "<li>" + data.loc + "</li>";
-            htmlOutput += "<li>" + data.org + "</li>";
+            htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
+            htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
+            htmlOutput += "<li>" + "City: " + data.city + "</li>";
+            htmlOutput += "<li>" + "Region: " + data.region + "</li>";
+            htmlOutput += "<li>" + "Country: " + data.country + "</li>";
+            htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
+            htmlOutput += "<li>" + "organization: " + data.org + "</li>";
             $('.table').append(htmlOutput);
         });
-
     }
-
-
-    //    function initialize(searchValue) {
-    //        var params = {
-    //            'lat': $('.map').data('lat'),
-    //            'long': $('.map').data('long')
-    //        };
-    //        google.maps.event.addDomListener(window, 'load', initialize(params));
-    //
-    //        var mapOptions = {
-    //            center: new google.maps.LatLng(coordinates.lat, coordinates.long),
-    //            zoom: 15,
-    //            mapTypeId: google.maps.MapTypeId.ROADMAP,
-    //        };
-    //
-    //        var mapping = new google.maps.Map(document.getElementsByClassName(".map"), mapOptions);
-    //
-    //        var markerIcon = {
-    //            path: google.maps.SymbolPath.CIRCLE,
-    //            fillColor: '#000',
-    //            fillOpacity: .9,
-    //            scale: 10,
-    //            strokeColor: '#000',
-    //            strokeWeight: 1
-    //        };
-    //        var marker = new google.maps.Marker({
-    //            icon: markerIcon,
-    //            position: new google.maps.LatLng(coordinates.lat, coordinates.long),
-    //            mapping: mapping,
-    //            label: {
-    //                color: 'white',
-    //                text: '1'
-    //            }
-    //        });
-    //        marker.setMap(mapping);
-    //    }
 });
