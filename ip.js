@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //hide the results table
     $('.table').hide();
-    $('.map').hide();
+    //    $('.map').hide();
     //declare the search value inside the input text
     var searchValue = "";
 
@@ -12,15 +12,13 @@ $(document).ready(function () {
         //set the initial search value to the user ip
         searchValue = data.ip;
         $("#search-input").val(searchValue);
-
-
     });
 
     //when the user clicks the search button show the results
     $("#ip-search").submit(function (e) {
         //show the results to the user
         $('.table').show();
-        $('.map').show();
+        //        $('.map').show();
         //default action will not be triggered when method is called
         e.preventDefault();
         //get value from search box
@@ -31,11 +29,8 @@ $(document).ready(function () {
         } else {
             //pass value to the searchIp function to do the ip lookup and integrate that into the script
             searchIp(searchValue);
-            initialize(searchValue);
-
+            //            initialize(searchValue);
         }
-
-
     });
     //function for doing the IP lookup using the user's input value
     function searchIp(searchValue) {
@@ -59,44 +54,38 @@ $(document).ready(function () {
     }
 
 
-    function initialize(searchValue) {
-        var params = {
-            'lat': $('.map').data('lat'),
-            'long': $('.map').data('long')
-        };
-        google.maps.event.addDomListener(window, 'load', initialize(params));
-
-
-
-        var mapOptions = {
-            center: new google.maps.LatLng(coordinates.lat, coordinates.long),
-            zoom: 15,
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-        };
-
-        var mapping = new google.maps.Map(document.getElementsByClassName(".map"), mapOptions);
-
-        var markerIcon = {
-            path: google.maps.SymbolPath.CIRCLE,
-            fillColor: '#000',
-            fillOpacity: .9,
-            scale: 10,
-            strokeColor: '#000',
-            strokeWeight: 1
-        };
-
-
-        var marker = new google.maps.Marker({
-            icon: markerIcon,
-            position: new google.maps.LatLng(coordinates.lat, coordinates.long),
-            mapping: mapping,
-            label: {
-                color: 'white',
-                text: '1'
-            }
-        });
-
-        marker.setMap(mapping);
-    }
-
+    //    function initialize(searchValue) {
+    //        var params = {
+    //            'lat': $('.map').data('lat'),
+    //            'long': $('.map').data('long')
+    //        };
+    //        google.maps.event.addDomListener(window, 'load', initialize(params));
+    //
+    //        var mapOptions = {
+    //            center: new google.maps.LatLng(coordinates.lat, coordinates.long),
+    //            zoom: 15,
+    //            mapTypeId: google.maps.MapTypeId.ROADMAP,
+    //        };
+    //
+    //        var mapping = new google.maps.Map(document.getElementsByClassName(".map"), mapOptions);
+    //
+    //        var markerIcon = {
+    //            path: google.maps.SymbolPath.CIRCLE,
+    //            fillColor: '#000',
+    //            fillOpacity: .9,
+    //            scale: 10,
+    //            strokeColor: '#000',
+    //            strokeWeight: 1
+    //        };
+    //        var marker = new google.maps.Marker({
+    //            icon: markerIcon,
+    //            position: new google.maps.LatLng(coordinates.lat, coordinates.long),
+    //            mapping: mapping,
+    //            label: {
+    //                color: 'white',
+    //                text: '1'
+    //            }
+    //        });
+    //        marker.setMap(mapping);
+    //    }
 });
