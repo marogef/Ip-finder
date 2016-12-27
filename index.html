@@ -5,53 +5,6 @@
     <title>Ip address finder and location</title>
     <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width">
-
-    <script>
-        // Note: This example requires that you consent to location sharing when
-        // prompted by your browser. If you see the error "The Geolocation service
-        // failed.", it means you probably did not give permission for the browser to
-        // locate you.
-
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                },
-                zoom: 6
-            });
-            var infoWindow = new google.maps.InfoWindow({
-                map: map
-            });
-
-            // Try HTML5 geolocation.
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function (position) {
-                    var pos = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-
-                    infoWindow.setPosition(pos);
-                    infoWindow.setContent('Location found.');
-                    map.setCenter(pos);
-                }, function () {
-                    handleLocationError(true, infoWindow, map.getCenter());
-                });
-            } else {
-                // Browser doesn't support Geolocation
-                handleLocationError(false, infoWindow, map.getCenter());
-            }
-        }
-
-        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-            infoWindow.setPosition(pos);
-            infoWindow.setContent(browserHasGeolocation ?
-                'Error: The Geolocation service failed.' :
-                'Error: Your browser doesn\'t support geolocation.');
-        }
-    </script>
-
 </head>
 
 <body>
@@ -81,14 +34,12 @@
 
             <div id="ip-address"></div>
         </ol>
-
     </section>
 
     <section class="main">
         <section class="primary">
         </section>
         <!--create the form and the button to search for the ip address-->
-
     </section>
     <!--create the form and the button to search for the ip address-->
     <section class="searchsection">
@@ -104,19 +55,6 @@
 
         </p>
     </section>
-    <section class="map-container">
-        <div id="map"></div>
-
-        <!--
-
-        <img class="map" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" src="http://maps.googleapis.com/maps/api/js" style="width:600px;height:300px">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
-        <img class="map" style="width:600px;height:300px" data-lat='40.8152' data-long='-73.0455'>
-       <img class="map" src="https://maps.googleapis.com/maps/api/js?key='searchValue'&callback=initMap">
-       -->
-    </section>
 
     <section class="table">
         <ul>
@@ -127,9 +65,6 @@
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5akp_2zrviwt2EwKbhS5tp-YoVX9lMOg&callback=initMap" type="text/javascript"></script>
     <script src="ip.js"></script>
-
-
-
 </body>
 
 </html>
