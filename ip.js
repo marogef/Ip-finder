@@ -2,7 +2,6 @@ $(document).ready(function () {
     //hide the results table
     $('.table').hide();
 
-
     //declare the search value inside the input text
     var searchValue = "";
 
@@ -18,7 +17,6 @@ $(document).ready(function () {
     $("#ip-search").submit(function (e) {
         //show the results to the user
         $('.table').show();
-
         //default action will not be triggered when method is called
         e.preventDefault();
         //get value from search box
@@ -28,6 +26,7 @@ $(document).ready(function () {
             alert('You have to add something!!!');
         } else {
             //pass value to the searchIp function to do the ip lookup and integrate that into the script
+
             searchIp(searchValue);
         }
     });
@@ -39,14 +38,19 @@ $(document).ready(function () {
             //add values to the table dynamically
             //declare a variable and populate it
             var htmlOutput = "";
-            htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
-            htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
-            htmlOutput += "<li>" + "City: " + data.city + "</li>";
-            htmlOutput += "<li>" + "Region: " + data.region + "</li>";
-            htmlOutput += "<li>" + "Country: " + data.country + "</li>";
-            htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
-            htmlOutput += "<li>" + "organization: " + data.org + "</li>";
-            $('.table').append(htmlOutput);
+            if (htmlOutput.length !== "") {
+                $('.table').empty;
+            } else {
+
+                htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
+                htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
+                htmlOutput += "<li>" + "City: " + data.city + "</li>";
+                htmlOutput += "<li>" + "Region: " + data.region + "</li>";
+                htmlOutput += "<li>" + "Country: " + data.country + "</li>";
+                htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
+                htmlOutput += "<li>" + "organization: " + data.org + "</li>";
+                $('.table').append(htmlOutput);
+            }
         });
 
     }

@@ -74,23 +74,6 @@ h3 {
     color: blue;
 }
 
-.main-footer {
-    padding-bottom: 100px;
-    border-bottom: 10px solid #184F36;
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    margin: auto;
-    width: 850px;
-}
-
-.main-footer a {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 35px;
-}
-
 .primary {
     margin-left: auto;
     margin-right: auto;
@@ -131,14 +114,6 @@ h3 {
     position: relative;
     left: 5px;
     bottom: 450px;
-}
-
-tr:first-child {
-    border-top: none;
-}
-
-tr {
-    border-top: 1px solid #adc;
 }
 
 .searchsection {
