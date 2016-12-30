@@ -38,19 +38,19 @@ $(document).ready(function () {
             //add values to the table dynamically
             //declare a variable and populate it
             var htmlOutput = "";
-            if (htmlOutput.length !== "") {
-                $('.table').empty;
-            } else {
+            //            if (htmlOutput.length !== "") {
+            //                $('.table').empty;
+            //            } else {
 
-                htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
-                htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
-                htmlOutput += "<li>" + "City: " + data.city + "</li>";
-                htmlOutput += "<li>" + "Region: " + data.region + "</li>";
-                htmlOutput += "<li>" + "Country: " + data.country + "</li>";
-                htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
-                htmlOutput += "<li>" + "organization: " + data.org + "</li>";
-                $('.table').append(htmlOutput);
-            }
+            htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
+            htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
+            htmlOutput += "<li>" + "City: " + data.city + "</li>";
+            htmlOutput += "<li>" + "Region: " + data.region + "</li>";
+            htmlOutput += "<li>" + "Country: " + data.country + "</li>";
+            htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
+            htmlOutput += "<li>" + "organization: " + data.org + "</li>";
+            $('.main ul').html(htmlOutput);
+            //            }
         });
 
     }

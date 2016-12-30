@@ -1,47 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+    /*reset Firefox user agent styles*/
+    -moz-margin-before: 0px;
+    -moz-margin-after: 0px;
+    -moz-margin-start: 0px;
+    -moz-margin-end: 0px;
+    -moz-padding-before: 0px;
+    -moz-padding-after: 0px;
+    -moz-padding-start: 0px;
+    -moz-padding-end: 0px;
+    /*reset Internet Explorer user agent styles*/
+    -ms-margin-before: 0px;
+    -ms-margin-after: 0px;
+    -ms-margin-start: 0px;
+    -ms-margin-end: 0px;
+    -ms-padding-before: 0px;
+    -ms-padding-after: 0px;
+    -ms-padding-start: 0px;
+    -ms-padding-end: 0px;
+    /*reset Opera user agent styles*/
+    -o-margin-before: 0px;
+    -o-margin-after: 0px;
+    -o-margin-start: 0px;
+    -o-margin-end: 0px;
+    -o-padding-before: 0px;
+    -o-padding-after: 0px;
+    -o-padding-start: 0px;
+    -o-padding-end: 0px;
+}
+
+
+/*general styles*/
+
 body {
-    margin: 0px 0px 0px 10px;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url('stone.jpg.png');
     background-size: cover;
 }
 
-title {
-    text-align: center;
-    font-size: 1.625rem;
-    letter-spacing: .075em;
-    font-weight: 200;
+ol,
+ul {
+    display: block;
+    list-style-type: decimal;
+    margin: 0 1em;
+    padding-left: 30px;
 }
 
-nav {
+input {
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+/*header styles*/
+
+header nav {
     background: #184F36;
-    height: 30px;
+    height: 45px;
     padding-top: 10px;
     margin-left: 0px;
 }
 
-nav li {
+header nav li {
     display: inline-block;
 }
 
-nav a {
+header nav li a {
     font-weight: 800;
     color: #b37c57;
     padding: 15px 10px;
 }
 
-nav a:visited {
+header nav li a:visited {
     color: #fff;
 }
 
-nav a.selected,
-nav a:hover {
+header nav li a.selected,
+header nav li a:hover {
     color: #b37c57;
 }
 
-header p {
-    text-align: center;
-    color: azure;
-    text-decoration: underline;
+
+/*content styles*/
+
+.maintext {
+    color: ghostwhite;
+    text-emphasis: bold;
+    border-width: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width: 610px;
+    border: 3px #CCCbCC;
+    margin-bottom: 20px;
+    background-image: url(transparent.jpg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.maintext a {
+    color: bisque;
 }
 
 .main {
@@ -59,129 +130,83 @@ header p {
     background-size: cover;
 }
 
-h1 {
-    font-size: 1.625rem;
-    font-family: 'Abolition Regular', Halvetica, Arial, sans-serrif;
-}
-
-h2 {
-    font-size: 3.3125rem;
-    font-family: 'Abolition Regular', Halvetica, Arial, sans-serrif;
-}
-
-h3 {
-    font-size: 1.25em;
-    color: blue;
-}
-
-.primary {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
-.map {
-    border-collapse: collapse;
-    border-spacing: 0;
-    color: chartreuse;
-    height: 200px;
-    width: 20em;
-    position: relative;
-    left: 950px;
-    bottom: 360px;
-}
-
-.explanation {
-    border: dotted #CCCbCC;
+.main ul {
     color: ghostwhite;
-    text-emphasis: bold;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    margin-top: 52px;
+    margin-left: 35px;
 }
 
-.table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    background-color: bisque;
-    color: darkcyan;
-    height: 250px;
-    width: 30em;
-    position: relative;
-    left: 400px;
-    bottom: 600px;
-    border: 5px dashed RGB(37, 16, 161);
-}
-
-.table li {
-    position: relative;
-    left: 5px;
-    bottom: 450px;
-}
-
-.searchsection {
+.main .searchsection {
     text-align: center;
     margin-bottom: 5px;
-    margin-top: 7px;
-}
-
-.maintext {
-    color: ghostwhite;
-    text-emphasis: bold;
-    border-width: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 500px;
-    border: 3px dotted #CCCbCC;
-    margin-bottom: 10px;
-}
-
-.map-container {
-    width: 400px;
-    height: 300px;
-    border: 5px black solid;
+    margin-top: 40px;
 }
 
 .secondary-content {
     padding-top: 80px;
-    padding-bottom: 70px;
-    border-bottom: 2px solid #dfe2e6;
-    width: 75%;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: auto;
-    max-width: 960px;
+    width: 610px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    margin: 0 auto;
+    /* max-width: 960px; */
     color: RGB(251, 255, 254);
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.firstpart,
-.secondpart {
-    width: 46.5%;
+.secondary-content .firstpart,
+.secondary-content .secondpart {
+    width: 49.5%;
+    background-image: url(transparent.jpg);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.firstpart {
-    float: left;
+.secondary-content .firstpart h3,
+.secondary-content .secondpart h3 {
+    font-size: 1.25em;
+    color: blue;
 }
 
-.secondpart {
-    float: right;
-}
-
-img {
-    max-width: 100%;
+.secondary-content img {
+    width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
+    height: 170px;
 }
 
-@media (max-width: 760px) {
-    .primary,
-    .secondary {
+
+/*footer styles */
+
+footer {
+    background-color: #184F36;
+    /* height: 10px; */
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    /* color: white; */
+}
+
+footer p a {
+    color: white;
+}
+
+
+/*reposnsive */
+
+@media only screen and (max-width: 800px) {
+    .secondary-content .firstpart,
+    .secondary-content .secondpart {
         width: 100%;
         padding: 20px;
         border-top: none;
+        margin-bottom: 20px;
     }
-}
-
-@media (max-width: 1024px) {
-    .primary,
-    .secondary {
-        width: 90%;
+    .secondary-content img {
+        height: auto;
     }
 }

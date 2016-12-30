@@ -10,45 +10,52 @@
 <body>
     <header>
         <nav>
-            <a href="index.html" class="selected">Home</a>
-            <li><a href="http://whatismyipaddress.com">What is an IP address </a></li>
-            <li><a href="http://smallbusiness.chron.com/importance-knowing-ip-address-69077.html">Why knowing an IP is important</a></li>
-            <li><a href="https://www.hotspotshield.com/benefits/hide-ip-address/">Hide your IP address</a></li>
-            <li><a href="http://www.mask-myip.com">Mask your IP address</a></li>
-            <li><a href="http://null-byte.wonderhowto.com/how-to/hackers-use-your-ip-address-hack-your-computer-stop-0130719/">Stop hackers</a></li>
+            <ul>
+                <li>
+                    <a href="index.html" class="selected">Home</a>
+                </li>
+                <li>
+                    <a href="http://whatismyipaddress.com" target="_blank">What is it </a>
+                </li>
+                <li>
+                    <a href="http://smallbusiness.chron.com/importance-knowing-ip-address-69077.html" target="_blank">Importance</a>
+                </li>
+                <li>
+                    <a href="http://null-byte.wonderhowto.com/how-to/hackers-use-your-ip-address-hack-your-computer-stop-0130719/" target="_blank">Stop hackers</a>
+                </li>
+            </ul>
         </nav>
-
-        <p>Use this section to find an IP address location</p>
     </header>
 
     <section class="maintext">
+        <p>Use this section to find an IP address location</p>
         <p>We can help you find your computer location. You just need to provide us with the ip information.</p>
         <p>Here are some of the things that know about IP addresses</p>
         <ol>
             <li>Two versions of the Internet Protocol (IP) are in use: IP Version 4 and IP Version 6. </li>
             <li>Represented in dot-decimal notation</li>
             <li>Consists of four decimal numbers, each ranging from 0 to 255, separated by dots</li>
-            <a href="https://www.iplocation.net/ip-address"> More information on this topic</a>
-            <div id="ip-address"></div>
+
         </ol>
-    </section>
-
-    <section class="main">
-        <section class="primary">
-        </section>
-    </section>
-
-    <!--create the form and the button to search for the ip address-->
-    <section class="searchsection">
-        <form id="ip-search">
-            <input id="search-input" type="text" value="" placeholder="Enter value">
-            <input type="submit" value="Search">
-        </form>
-    </section>
-    <section class="explanation">
         <p>
             The table below will show you the rest of the information that will be obtained from the IP address that you entered. We wil list the hostname, the network, the city, the latitude, the postal code, and the route.
         </p>
+        <a href="https://www.iplocation.net/ip-address"> More information on this topic</a>
+        <div id="ip-address"></div>
+    </section>
+
+    <section class="main">
+        <!--create the form and the button to search for the ip address-->
+        <section class="searchsection">
+            <form id="ip-search">
+                <input id="search-input" type="text" value="" placeholder="Enter value">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <ul>
+
+        </ul>
     </section>
 
     <section class="secondary-content">
@@ -64,21 +71,23 @@
             <img src="ip.jpg" alt="Turtle">
             <h3>How does it look like?</h3>
             <p>
-                The currently used IP addresses (IPv4) look like four blocks of digits ranging from 0 to 255 separated by a period like "132.161.1.655".In the new schema (IPv6) addresses can be written in different ways: 2001:2353:0000:0000:0000:0000:1428:57ab.
+                The currently used IP addresses (IPv4) look like four blocks of digits ranging from 0 to 255 separated by a period like "132.161.1.655".
             </p>
             <ol>
                 <li>IP addresses are useful</li>
                 <li>We will see more development with IP addresses</li>
             </ol>
         </section>
+
+
     </section>
 
-    <section class="table">
-        <ul>
 
-        </ul>
-    </section>
-
+    <footer>
+        <p>
+            <a href="https://github.com/marogef">Designer: Faras Maroge</a>
+        </p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="ip.js"></script>
 </body>
