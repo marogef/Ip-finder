@@ -6,7 +6,7 @@ $(document).ready(function () {
     var searchValue = "";
 
     //use http://ipinfo.io/json for your own IP
-    $.getJSON('https://crossorigin.me/http://ipinfo.io/', function (data) {
+    $.getJSON('https://crossorigin.me/https://ipinfo.io/', function (data) {
         //set the initial search value to the user ip
         searchValue = data.ip;
         $("#search-input").val(searchValue);
@@ -34,7 +34,7 @@ $(document).ready(function () {
     function searchIp(searchValue) {
         //Use the searchValue to get the details on the user input IP
 
-        $.getJSON('https://crossorigin.me/http://ipinfo.io/' + searchValue + '/json', function (data) {
+        $.getJSON('https://crossorigin.me/https://ipinfo.io/' + searchValue + '/json', function (data) {
             //add values to the table dynamically
             //declare a variable and populate it
             var htmlOutput = "";
