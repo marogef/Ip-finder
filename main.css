@@ -47,7 +47,7 @@
 
 body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-image: url('stone.jpg.png');
+    background-image: url('digital.jpg');
     background-size: cover;
 }
 
@@ -68,7 +68,7 @@ input {
 /*header styles*/
 
 header nav {
-    background: #184F36;
+    background: darkblue;
     height: 45px;
     padding-top: 10px;
     margin-left: 0px;
@@ -120,14 +120,16 @@ header nav li a:hover {
     margin: auto;
     margin: auto;
     padding: 2px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px black;
+    /*    border-radius: 20px;*/
+    /*    box-shadow: 5px 5px 5px 5px black;*/
     height: 28em;
     border-bottom: 10px;
     border-top: 5px;
-    background-color: #666600;
-    background-image: url(hangingboard.jpg);
+    /*    background-color: #666600;
+    */
+    /*    background-image: url(digital-dots.jpg);*/
     background-size: cover;
+    color: white;
 }
 
 .main ul {
@@ -169,7 +171,7 @@ header nav li a:hover {
 .secondary-content .firstpart h3,
 .secondary-content .secondpart h3 {
     font-size: 1.25em;
-    color: blue;
+    color: white;
 }
 
 .secondary-content img {
@@ -183,7 +185,7 @@ header nav li a:hover {
 /*footer styles */
 
 footer {
-    background-color: #184F36;
+    background-color: darkblue;
     /* height: 10px; */
     width: 100%;
     padding: 15px;
