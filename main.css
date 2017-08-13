@@ -201,6 +201,11 @@ footer p a {
 /*reposnsive */
 
 @media only screen and (max-width: 800px) {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 797px;
+    }
     ol,
     ul {
         display: block;
