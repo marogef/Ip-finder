@@ -201,6 +201,19 @@ footer p a {
 /*reposnsive */
 
 @media only screen and (max-width: 800px) {
+    ol,
+    ul {
+        display: block;
+        list-style-type: decimal;
+        margin: 0px 31px;
+        padding-left: 0px;
+    }
+    header nav {
+        background: darkblue;
+        height: 37px;
+        width: 1327px;
+        margin: 0px 0px 0px 0px;
+    }
     .secondary-content .firstpart,
     .secondary-content .secondpart {
         width: 100%;
@@ -210,5 +223,8 @@ footer p a {
     }
     .secondary-content img {
         height: auto;
+    }
+    .footer {
+        width: 106%;
     }
 }
