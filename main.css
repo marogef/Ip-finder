@@ -80,7 +80,7 @@ header nav li {
 
 header nav li a {
     font-weight: 800;
-    color: #b37c57;
+    color: white;
     padding: 15px 10px;
 }
 
@@ -102,7 +102,7 @@ header nav li a:hover {
     border-width: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20px;
+    margin-top: -205px;
     width: 610px;
     border: 3px #CCCbCC;
     margin-bottom: 20px;
