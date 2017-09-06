@@ -48,7 +48,11 @@
 body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url('digital.jpg');
-    background-size: cover;
+}
+html,
+body{
+width:100%;
+overflow-x:hidden;
 }
 
 ol,
@@ -200,7 +204,9 @@ footer p a {
 
 /*reposnsive */
 
-@media only screen and (max-width: 800px) {
+@media only screen 
+and (min-device-width : 305px) 
+and (max-device-width : 895px)   {
     body {
         margin-left: auto;
         margin-right: auto;
