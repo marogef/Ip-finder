@@ -49,10 +49,13 @@ body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image: url('digital.jpg');
 }
-html,
-body{
-width:100%;
-overflow-x:hidden;
+/*html,*/
+/*body{*/
+/*width:100%;*/
+/*overflow-x:hidden;*/
+
+img{
+        opacity: 0.6;
 }
 
 ol,
@@ -132,7 +135,7 @@ header nav li a:hover {
     /*    background-color: #666600;
     */
     /*    background-image: url(digital-dots.jpg);*/
-    background-size: cover;
+/*    background-size: cover;*/
     color: white;
 }
 
@@ -183,6 +186,7 @@ header nav li a:hover {
     margin-bottom: 20px;
     border-radius: 10px;
     height: 170px;
+    opacity: 0.6;
 }
 
 
