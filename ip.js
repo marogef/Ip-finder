@@ -48,7 +48,7 @@ $(document).ready(function () {
             htmlOutput += "<li>" + "Region: " + data.region + "</li>";
             htmlOutput += "<li>" + "Country: " + data.country + "</li>";
             htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
-            htmlOutput += "<li>" + "organization: " + data.org + "</li>";
+            htmlOutput += "<li>" + "Organization: " + data.org + "</li>";
             $('.main ul').html(htmlOutput);
             //            }
         });

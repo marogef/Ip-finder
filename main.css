@@ -206,40 +206,83 @@ footer p a {
 }
 
 
-/*reposnsive */
+/*reposnsive design*/
 
 @media only screen 
-and (min-device-width : 305px) 
-and (max-device-width : 895px)   {
+and (max-device-width : 1025px)   {
     body {
         margin-left: auto;
         margin-right: auto;
-        width: 797px;
+        width: 1026px;
     }
-    ol,
-    ul {
-        display: block;
-        list-style-type: decimal;
-        margin: 0px 31px;
-        padding-left: 0px;
-    }
+
     header nav {
         background: darkblue;
         height: 37px;
-        width: 1327px;
+        width: 1020px;
         margin: 0px 0px 0px 0px;
     }
-    .secondary-content .firstpart,
+
+    footer {
+        width: 1020px;
+      margin-top: 320px;
+
+    }
+    
+    
+    @media only screen 
+and (max-device-width : 480px)   {
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 507px;
+    }
+
+    header nav {
+        background: darkblue;
+        height: 37px;
+        width: 670px;
+        margin: 0px 0px 0px 0px;
+    }
+    .main ul{
+            margin-top: 7px;
+    margin-right: auto;
+    width: 263px;
+    margin-left: auto;
+    }
+    
+    .maintext{
+    margin-right: auto;
+    margin-left: 128px;
+    /* margin-top: -49px; */
+    width: 344px;
+    border: 3px #CCCbCC;
+    margin-bottom: 20px;
+    background-image: url(transparent.jpg);
+    /* border-radius: 0.5rem; */
+    padding: 2rem;
+    
+    }
+
+    .secondary-content .firstpart
+    {
+    width: 274px;
+    margin-left: 338px;
+    margin-right: 59px;
+    }
     .secondary-content .secondpart {
-        width: 100%;
-        padding: 20px;
-        border-top: none;
-        margin-bottom: 20px;
+    width: 317px;
+    margin-right: 324px;
+    margin-top: -311px;
+    margin-left: 12px;
+        
     }
     .secondary-content img {
         height: auto;
     }
-    .footer {
-        width: 106%;
+
+    footer {
+        width: 670px;
+        margin-top: 470px;
     }
 }
