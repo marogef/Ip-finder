@@ -6,7 +6,7 @@ $(document).ready(function () {
     var searchValue = "";
 
     //use http://ipinfo.io/json for your own IP
-       $.getJSON("http://ip-api.com/json?callback=?", function(data){   
+       $.getJSON("https://ipapi.co/json/", function(data){   
 
     //set the initial search value to the user ip
         searchValue = data.ip;
@@ -35,7 +35,7 @@ $(document).ready(function () {
     function searchIp(searchValue) {
         //Use the searchValue to get the details on the user input IP
     
-          	$.getJSON("http://ip-api.com/json?callback=?", +searchValue + '/json', function(data){
+          	$.getJSON("https://ipapi.co/json/", +searchValue + '/json', function(data){
 
             //add values to the table dynamically
             //declare a variable and populate it
@@ -44,12 +44,12 @@ $(document).ready(function () {
             //                $('.table').empty;
             //            } else {
 
-            htmlOutput += "<li>" + "Service Provider: " + data.isp + "</li>";
+            htmlOutput += "<li>" + "Service Provider: " + data.org + "</li>";
             htmlOutput += "<li>" + "City: " + data.city + "</li>";
             htmlOutput += "<li>" + "Region: " + data.region + "</li>";
             htmlOutput += "<li>" + "Country: " + data.country + "</li>";
-            htmlOutput += "<li>" + "Latitude: " + data.lat + "</li>";    
-            htmlOutput += "<li>" + "Zip: " + data.zip + "</li>";
+            htmlOutput += "<li>" + "Latitude: " + data.latitude + "</li>";    
+            htmlOutput += "<li>" + "Zip: " + data.postal + "</li>";
             $('.main ul').html(htmlOutput);
             //            }
         });
