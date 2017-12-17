@@ -5,8 +5,8 @@ $(document).ready(function () {
     //declare the search value inside the input text
     var searchValue = "";
 
-    //use http://ipinfo.io/json for your own IP
-              	$.getJSON("http://ip-api.com/json", +searchValue + '/json', function(data){   
+    //use HTTPS://ip-api.com/json for your own IP
+              	$.getJSON("HTTPS://ip-api.com/json", function(data){   
 
     //set the initial search value to the user ip
         searchValue = data.ip;
@@ -35,7 +35,7 @@ $(document).ready(function () {
     function searchIp(searchValue) {
         //Use the searchValue to get the details on the user input IP
     
-          	$.getJSON("http://ip-api.com/json", +searchValue + '/json', function(data){
+          	$.getJSON("HTTPS://ip-api.com/json", +searchValue + '/json', function(data){
 
             //add values to the table dynamically
             //declare a variable and populate it
