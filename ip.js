@@ -6,8 +6,9 @@ $(document).ready(function () {
     var searchValue = "";
 
     //use http://ipinfo.io/json for your own IP
-    $.getJSON('https://crossorigin.me/https://ipinfo.io/', function (data) {
-        //set the initial search value to the user ip
+              	$.getJSON("http://ip-api.com/json", +searchValue + '/json', function(data){   
+
+    //set the initial search value to the user ip
         searchValue = data.ip;
         $("#search-input").val(searchValue);
     });
@@ -33,8 +34,9 @@ $(document).ready(function () {
     //function for doing the IP lookup using the user's input value
     function searchIp(searchValue) {
         //Use the searchValue to get the details on the user input IP
+    
+          	$.getJSON("http://ip-api.com/json", +searchValue + '/json', function(data){
 
-        $.getJSON('https://crossorigin.me/https://ipinfo.io/' + searchValue + '/json', function (data) {
             //add values to the table dynamically
             //declare a variable and populate it
             var htmlOutput = "";
@@ -42,13 +44,12 @@ $(document).ready(function () {
             //                $('.table').empty;
             //            } else {
 
-            htmlOutput += "<li>" + "IP address: " + data.ip + "</li>";
-            htmlOutput += "<li>" + "Hostname: " + data.hostname + "</li>";
+            htmlOutput += "<li>" + "Service Provider: " + data.isp + "</li>";
             htmlOutput += "<li>" + "City: " + data.city + "</li>";
             htmlOutput += "<li>" + "Region: " + data.region + "</li>";
             htmlOutput += "<li>" + "Country: " + data.country + "</li>";
-            htmlOutput += "<li>" + "Location: " + data.loc + "</li>";
-            htmlOutput += "<li>" + "Organization: " + data.org + "</li>";
+            htmlOutput += "<li>" + "Latitude: " + data.lat + "</li>";    
+            htmlOutput += "<li>" + "Zip: " + data.zip + "</li>";
             $('.main ul').html(htmlOutput);
             //            }
         });
