@@ -87,6 +87,7 @@ header nav li {
 
 header nav li a {
     font-weight: 800;
+    font-size: 15px;
     color: white;
     padding: 15px 10px;
 }
@@ -229,61 +230,76 @@ and (max-device-width : 1025px)   {
       margin-top: 320px;
 
     }
+}
     
-    
-    @media only screen 
-and (max-device-width : 480px)   {
-    body {
+
+
+@media only screen 
+and (max-device-width : 630px){
+     body {
         margin-left: auto;
         margin-right: auto;
-        width: 507px;
+        width: 1026px;
     }
 
     header nav {
         background: darkblue;
         height: 37px;
-        width: 670px;
+        width: 1020px;
         margin: 0px 0px 0px 0px;
-    }
-    .main ul{
-            margin-top: 7px;
-    margin-right: auto;
-    width: 263px;
-    margin-left: auto;
-    }
-    
-    .maintext{
-    margin-right: auto;
-    margin-left: 128px;
-    /* margin-top: -49px; */
-    width: 344px;
-    border: 3px #CCCbCC;
-    margin-bottom: 20px;
-    background-image: url(transparent.jpg);
-    /* border-radius: 0.5rem; */
-    padding: 2rem;
-    
-    }
-
-    .secondary-content .firstpart
-    {
-    width: 274px;
-    margin-left: 338px;
-    margin-right: 59px;
-    }
-    .secondary-content .secondpart {
-    width: 317px;
-    margin-right: 324px;
-    margin-top: -311px;
-    margin-left: 12px;
-        
-    }
-    .secondary-content img {
-        height: auto;
     }
 
     footer {
-        width: 670px;
-        margin-top: 470px;
+        width: 1020px;
+      margin-top: 320px;
+
+    }
+
+}
+    
+    
+
+@media only screen 
+and (max-device-width : 480px)   {
+
+        body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1026px;
+    }
+
+    header nav {
+        background: darkblue;
+        height: 37px;
+        width: 1020px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    footer {
+        width: 1023px;
+        margin-top: 736px;
+
+    }
+}
+
+@media only screen 
+and (max-device-width : 320px){
+
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1026px;
+    }
+
+    header nav {
+        background: darkblue;
+        height: 37px;
+        width: 1020px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    footer {
+        width: 1023px;
+        margin-top: 800px;
     }
 }
