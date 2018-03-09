@@ -241,7 +241,15 @@ and (max-device-width : 630px){
         margin-right: auto;
         width: 1026px;
     }
-
+    .maintext{
+        max-width: 80%;
+    }
+    .main .searchsection{
+        max-width: 90%;
+    }
+    .secondary-content{
+        max-width: 80%;
+    }
     header nav {
         background: darkblue;
         height: 37px;
@@ -262,12 +270,20 @@ and (max-device-width : 630px){
 @media only screen 
 and (max-device-width : 480px)   {
 
-        body {
+    body {
         margin-left: auto;
         margin-right: auto;
         width: 1026px;
     }
-
+    ol, ul {
+        max-width: 70%;
+    }
+    .maintext{
+        max-width: 70%;
+    }
+      .secondary-content {
+        max-width: 80%;
+    }
     header nav {
         background: darkblue;
         height: 37px;
@@ -290,10 +306,22 @@ and (max-device-width : 320px){
         margin-right: auto;
         width: 1026px;
     }
-
+     ol, ul {
+        max-width: 60%;
+    }
+   .maintext{
+        max-width: 70%;
+    }
+    .main .search-section{
+        max-width: 72%;
+    }
+    .secondary-content {
+        max-width: 72%;
+    }
     header nav {
         background: darkblue;
-        height: 37px;
+        height: 70px;
+
         width: 1020px;
         margin: 0px 0px 0px 0px;
     }
