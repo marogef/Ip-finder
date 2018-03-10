@@ -14,7 +14,6 @@ $(document).ready(function () {
     });
 
     //when the user clicks the search button show the results
-
     $("#ip-search").submit(function (e) {
         //show the results to the user
         $('.table').show();
@@ -27,23 +26,17 @@ $(document).ready(function () {
             alert('You have to add something!!!');
         } else {
             //pass value to the searchIp function to do the ip lookup and integrate that into the script
-
             searchIp(searchValue);
         }
     });
     //function for doing the IP lookup using the user's input value
     function searchIp(searchValue) {
-        //Use the searchValue to get the details on the user input IP
-    
+            //Use the searchValue to get the details on the user input IP
           	$.getJSON("https://ipapi.co/json/", +searchValue + '/json', function(data){
 
             //add values to the table dynamically
             //declare a variable and populate it
             var htmlOutput = "";
-            //            if (htmlOutput.length !== "") {
-            //                $('.table').empty;
-            //            } else {
-
             htmlOutput += "<li>" + "Service Provider: " + data.org + "</li>";
             htmlOutput += "<li>" + "City: " + data.city + "</li>";
             htmlOutput += "<li>" + "Region: " + data.region + "</li>";
