@@ -1,11 +1,15 @@
-Name: Ip Finder
+Name: IP Finder
 
+IP finder is a web app that you can use to search for information about your location.  This is based on your IP address only.   
 Summary:
-HTML, CSS, and Javascript were used in this project.  It features an IP lookup which makes use of an API to quickly and simply integrate IP geolocation into the website to find hostname, network, city, latitude, postal code, and route.
-Form validation is used when the search box is empty. 
+HTML, CSS, and JavaScript were used in this project. It uses AJAX calls to request and load data asynchronously from public APIs in response to user click events detected by event-handlers. Using jQuery DOM traversal and manipulation, the data is displayed in an organized layout that has been made responsive and mobile-first by CSS media-queries, allowing the page to be usable and equally optimized on devices with small and large screens alike.
 
-Design features:
-The design for the website includes desktop and tablet devices.
+It displays the following information on the same page:
+1-Service Provider
+2-City 
+3-Region 
+4-Country 
+5-Latitude 
+6-Zip 
 
-The user's IP address is displayed inside of the input box or they can type in an alternative IP address to display the properties.
-
+Form validation is used when the search box is empty. This app automatically fills up your Ip address when you visit.  You can type in an alternative IP address to display the properties.  The design for the website includes desktop and tablet devices. 
