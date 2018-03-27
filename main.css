@@ -163,7 +163,7 @@ header nav li a:hover {
 .main .searchsection a{
     color: #0000ff;
 }
-.main ul {
+.main ol {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
@@ -172,9 +172,11 @@ header nav li a:hover {
     margin-left: 292px;
     width: 470px;
     background: steelblue;
+    list-style: none; 
     
 
 }
+
 
 .main .searchsection {
     text-align: center;

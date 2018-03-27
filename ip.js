@@ -43,7 +43,7 @@ $(document).ready(function () {
             htmlOutput += "<li>" + "Country: " + data.country + "</li>";
             htmlOutput += "<li>" + "Latitude: " + data.latitude + "</li>";    
             htmlOutput += "<li>" + "Zip: " + data.postal + "</li>";
-            $('.main ul').html(htmlOutput);
+            $('.main ol').html(htmlOutput);
             //            }
         });
 
