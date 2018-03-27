@@ -170,6 +170,9 @@ header nav li a:hover {
     margin-top: 52px;
     margin-left: 35px;
     margin-left: 292px;
+    width: 470px;
+    background: steelblue;
+    
 
 }
 
@@ -179,6 +182,7 @@ header nav li a:hover {
     margin-top: 40px;
     font-size: 30px;
     color: ghostwhite;
+    background-color: steelblue;
 
 }
 .main-links{
