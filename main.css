@@ -167,9 +167,11 @@ header nav li a:hover {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
-    margin-top: 52px;
-    margin-left: 35px;
-    margin-left: 292px;
+/*    margin-top: 52px;*/
+/*    margin-left: 35px;*/
+/*    margin-left: 292px;*/
+    margin-left: auto;
+    margin-right: auto;
     width: 470px;
     background: steelblue;
     list-style: none; 
@@ -281,7 +283,19 @@ footer p a {
         width: 1026px;
     }
 */
+    .main{
+        width: 80%;
+    }
+    .maintext{
+        max-width: 80%;
+    }
+    .main .searchsection{
+        max-width: 100%;
+    }
+    .main-links{
+        max-width: 80%;
 
+    }
     header nav {
         background: darkblue;
         height: 37px;
@@ -295,7 +309,34 @@ footer p a {
 
     }
 }
-    
+    @media only screen and (max-width:840px){
+ .main{
+        width: 80%;
+     height: 550px;
+    }
+    .maintext{
+        max-width: 80%;
+    }
+    .main .searchsection{
+        max-width: 100%;
+    }
+    .main-links{
+        max-width: 80%;
+
+    }
+    header nav {
+        background: darkblue;
+        height: 37px;
+/*        width: 1020px;*/
+        margin: 0px 0px 0px 0px;
+    }
+
+    footer {
+/*        width: 1020px;*/
+      margin-top: 320px;
+
+    }
+}
 
 
 @media only screen and (max-width:630px){
@@ -306,8 +347,15 @@ footer p a {
         width: 1026px;
     }
 */
+    .main{
+        width: 80%;
+     height: 600px;
+    }
     .maintext{
         max-width: 80%;
+    }
+      .main ol{
+        width: 90%;
     }
     .main .searchsection{
         max-width: 90%;
@@ -315,6 +363,14 @@ footer p a {
     .main-links{
         max-width: 80%;
 
+    }
+    .main-links .info{
+                    width: 40%;
+
+    }
+
+    .main-links .shield{
+        width: 50%;
     }
 /*
     .secondary-content{
@@ -338,7 +394,7 @@ footer p a {
     
     
 
-@media only screen and (max-width:480px)   {
+@media only screen and (max-width:485px)   {
 
 /*
     body {
@@ -349,6 +405,14 @@ footer p a {
 */
     .main{
         max-width: 87%;
+        height: 650px;
+
+    }
+       .main .searchsection{
+        max-width: 100%;
+    }
+     .main ol{
+        width: 80%;
     }
     .maintext{
         max-width: 90%;
@@ -378,26 +442,30 @@ footer p a {
 max-width: 100%;
     }
 }
-@media only screen and (max-width:380px){
-    header nav {
-        max-width: 100%;
-        height: 60px;
-    }
-       .main-links{
-        max-width: 60%;
-
-    }
-}
-@media only screen and (max-width:320px){
+@media only screen and (max-width:416px){
   .main{
         max-width: 87%;
+        height: 650px;
+
+    }
+       .main .searchsection{
+        max-width: 100%;
+    }
+     .main ol{
+        width: 80%;
     }
     .maintext{
         max-width: 90%;
     }
-    .main-links{
-        max-width: 50%;
+       .main-links{
+        max-width: 90%;
 
+    }
+    .input{
+                width: 33%;
+    }
+    #search-button{
+        width: 33%;
     }
      .secondary-content .firstpart
     {
@@ -413,8 +481,54 @@ max-width: 100%;
         max-width: 100%;
     }
     header nav {
+  max-width: 100%;
+    }
+
+    footer {
+max-width: 100%;
+    }
+    
+}
+@media only screen and (max-width:320px){
+ .main{
+        max-width: 87%;
+        height: 780px;
+
+    }
+       .main .searchsection{
         max-width: 100%;
-        height: 60px;
+    }
+     .main ol{
+        width: 80%;
+    }
+    .maintext{
+        max-width: 90%;
+    }
+       .main-links{
+        max-width: 90%;
+
+    }
+    .input{
+                width: 23%;
+    }
+    #search-button{
+        width: 30%;
+    }
+     .secondary-content .firstpart
+    {
+        max-width: 48%;
+/*        width: 35%;*/
+    }
+      .secondary-content .secondpart
+    {
+                max-width: 48%;
+/*        width: 35%;*/
+    }
+    .secondary-content{
+        max-width: 100%;
+    }
+    header nav {
+  max-width: 100%;
     }
 
     footer {
