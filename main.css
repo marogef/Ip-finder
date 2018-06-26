@@ -47,15 +47,19 @@
 
 body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-/*    background-image: url('digital.jpg');*/
+    /*    background-image: url('digital.jpg');*/
 }
+
 /*html,*/
+
 /*body{*/
+
 /*width:100%;*/
+
 /*overflow-x:hidden;*/
 
-img{
-        opacity: 0.6;
+img {
+    opacity: 0.6;
 }
 
 /*
@@ -69,32 +73,29 @@ ul {
 */
 
 input {
-    padding: 18px;
+    padding: 10px 20px;
     border-radius: 4px;
-    border: black solid;
-    height: 70px;
-
-
+    border: 1px black solid;
+    font-size: 20px;
 }
-input:hover{
+
+input:hover {
     background-color: beige;
 }
-#search-button{
+
+#search-button {
     background-color: #0080ff;
     color: white;
-    height: 70px;
-    width: 150px;
 }
 
-#search-button:hover { 
-/*
+#search-button:hover {
+    /*
     transition: color 0.25s linear;
     text-shadow: 0 0 3px #555555;
 */
     color: black;
     background-color: #00bfff;
-/*    font-size: 150%;*/
-
+    /*    font-size: 150%;*/
 }
 
 /*header styles*/
@@ -130,12 +131,13 @@ header nav li a:hover {
 /*content styles*/
 
 .maintext {
-/*    color: ghostwhite;*/
+    /*    color: ghostwhite;*/
     text-emphasis: bold;
     border-width: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 45px;;
+    margin-top: 45px;
+    ;
     width: 610px;
     border: 3px #CCCbCC;
     margin-bottom: 20px;
@@ -160,23 +162,30 @@ header nav li a:hover {
     background-position: center;
     margin-top: 32px;
 }
-.main .searchsection a{
-    color: #0000ff;
+
+.main .searchsection a {
+    color: #eee;
+    text-decoration: none;
 }
+
+.main .searchsection a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .main ol {
     color: white;
-    font-family: "Times New Roman", Times, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     font-size: 20px;
-/*    margin-top: 52px;*/
-/*    margin-left: 35px;*/
-/*    margin-left: 292px;*/
+    margin-top: 25px;
+    padding-top: 25px;
+    /* margin-left: 292px; */
     margin-left: auto;
     margin-right: auto;
-    width: 470px;
-    background: steelblue;
-    list-style: none; 
-    
-
+    /* width: 470px; */
+    /* background: steelblue; */
+    list-style: none;
+    border-top: 1px dotted white;
 }
 
 
@@ -184,19 +193,28 @@ header nav li a:hover {
     text-align: center;
     margin-bottom: 5px;
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 20px;
     color: ghostwhite;
-    background-color: steelblue;
-
+    background-image: url("transparent.jpg");
+    width: 60%;
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
-.main-links{
+
+.main .searchsection p {
+    margin-bottom: 20px;
+}
+
+.main-links {
     margin-bottom: 20px;
     width: 610px;
     margin: 13px auto;
-    
-    
+
+
 }
-.main-links .info{
+
+.main-links .info {
     width: 49.5%;
     background-image: url(transparent.jpg);
     border-radius: 0.5rem;
@@ -204,11 +222,13 @@ header nav li a:hover {
     display: inline-block;
     vertical-align: top;
     background: #4d0000;
-    background: linear-gradient(to right, #a65959 0%,#660000 100%);
-    
+    background: linear-gradient(to right, #a65959 0%, #660000 100%);
+
 }
 
-.main-links .shield{
+
+
+.main-links .shield {
     width: 49.5%;
     background-image: url(transparent.jpg);
     border-radius: 0.5rem;
@@ -216,8 +236,26 @@ header nav li a:hover {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 10px;
-        background: linear-gradient(to right, #a65959 0%,#660000 100%);
+    background: linear-gradient(to right, #a65959 0%, #660000 100%);
 
+}
+
+.main-links .info a,
+.main-links .shield a {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.main-links .info img,
+.main-links .shield img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.main-links .info a:hover,
+.main-links .shield a:hover {
+    text-decoration: underline;
 }
 
 .secondary-content {
@@ -240,6 +278,8 @@ header nav li a:hover {
     padding: 2rem;
     display: inline-block;
     vertical-align: top;
+    height: 250px;
+    overflow-y: auto;
 }
 
 .secondary-content .firstpart h3,
@@ -268,111 +308,122 @@ footer {
     /* color: white; */
 }
 
-footer p a {
+footer a {
     color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 
 /*reposnsive design*/
 
-@media only screen and (max-width:1025px)   {
-/*
+@media only screen and (max-width:1025px) {
+    /*
     body {
         margin-left: auto;
         margin-right: auto;
         width: 1026px;
     }
 */
-    .main{
+    .main {
         width: 80%;
     }
-    .maintext{
+    .maintext {
         max-width: 80%;
     }
-    .main .searchsection{
+    .main .searchsection {
         max-width: 100%;
     }
-    .main-links{
+    .main-links {
         max-width: 80%;
 
     }
     header nav {
         background: darkblue;
         height: 37px;
-/*        width: 1020px;*/
+        /*        width: 1020px;*/
         margin: 0px 0px 0px 0px;
     }
 
     footer {
-/*        width: 1020px;*/
-      margin-top: 320px;
+        /*        width: 1020px;*/
+        margin-top: 320px;
 
     }
 }
-    @media only screen and (max-width:840px){
- .main{
+
+@media only screen and (max-width:840px) {
+    .main {
         width: 80%;
-     height: 550px;
+        height: 550px;
     }
-    .maintext{
+    .maintext {
         max-width: 80%;
     }
-    .main .searchsection{
+    .main .searchsection {
         max-width: 100%;
     }
-    .main-links{
+    .main-links {
         max-width: 80%;
 
     }
     header nav {
         background: darkblue;
         height: 37px;
-/*        width: 1020px;*/
+        /*        width: 1020px;*/
         margin: 0px 0px 0px 0px;
     }
 
     footer {
-/*        width: 1020px;*/
-      margin-top: 320px;
+        /*        width: 1020px;*/
+        margin-top: 320px;
 
     }
 }
 
 
-@media only screen and (max-width:630px){
-/*
+@media only screen and (max-width:630px) {
+    /*
      body {
         margin-left: auto;
         margin-right: auto;
         width: 1026px;
     }
 */
-    .main{
+    .main {
         width: 80%;
-     height: 600px;
+        height: 600px;
     }
-    .maintext{
+    .maintext {
         max-width: 80%;
     }
-      .main ol{
+    .main ol {
         width: 90%;
     }
-    .main .searchsection{
+    .main .searchsection {
         max-width: 90%;
     }
-    .main-links{
+    .main-links {
         max-width: 80%;
 
     }
-    .main-links .info{
-                    width: 40%;
+    .main-links .info {
+        width: 40%;
 
     }
 
-    .main-links .shield{
+    .main-links .shield {
         width: 50%;
     }
-/*
+    /*
     .secondary-content{
         max-width: 80%;
     }
@@ -380,158 +431,154 @@ footer p a {
     header nav {
         background: darkblue;
         height: 37px;
-/*        width: 1020px;*/
+        /*        width: 1020px;*/
         margin: 0px 0px 0px 0px;
     }
 
     footer {
-/*        width: 1020px;*/
-      margin-top: 320px;
+        /*        width: 1020px;*/
+        margin-top: 320px;
 
     }
 
 }
-    
-    
 
-@media only screen and (max-width:485px)   {
 
-/*
+
+@media only screen and (max-width:485px) {
+
+    /*
     body {
         margin-left: auto;
         margin-right: auto;
         width: 1026px;
     }
 */
-    .main{
+    .main {
         max-width: 87%;
         height: 650px;
 
     }
-       .main .searchsection{
+    .main .searchsection {
         max-width: 100%;
     }
-     .main ol{
+    .main ol {
         width: 80%;
     }
-    .maintext{
+    .maintext {
         max-width: 90%;
     }
-       .main-links{
+    .main-links {
         max-width: 90%;
 
     }
-     .secondary-content .firstpart
-    {
+    .secondary-content .firstpart {
         max-width: 48%;
-/*        width: 35%;*/
+        /*        width: 35%;*/
     }
-      .secondary-content .secondpart
-    {
-                max-width: 48%;
-/*        width: 35%;*/
+    .secondary-content .secondpart {
+        max-width: 48%;
+        /*        width: 35%;*/
     }
-    .secondary-content{
+    .secondary-content {
         max-width: 100%;
     }
     header nav {
-  max-width: 100%;
+        max-width: 100%;
     }
 
     footer {
-max-width: 100%;
+        max-width: 100%;
     }
 }
-@media only screen and (max-width:416px){
-  .main{
+
+@media only screen and (max-width:416px) {
+    .main {
         max-width: 87%;
         height: 650px;
 
     }
-       .main .searchsection{
+    .main .searchsection {
         max-width: 100%;
     }
-     .main ol{
+    .main ol {
         width: 80%;
     }
-    .maintext{
+    .maintext {
         max-width: 90%;
     }
-       .main-links{
+    .main-links {
         max-width: 90%;
 
     }
-    .input{
-                width: 33%;
-    }
-    #search-button{
+    .input {
         width: 33%;
     }
-     .secondary-content .firstpart
-    {
+    #search-button {
+        width: 33%;
+    }
+    .secondary-content .firstpart {
         max-width: 48%;
-/*        width: 35%;*/
+        /*        width: 35%;*/
     }
-      .secondary-content .secondpart
-    {
-                max-width: 48%;
-/*        width: 35%;*/
+    .secondary-content .secondpart {
+        max-width: 48%;
+        /*        width: 35%;*/
     }
-    .secondary-content{
+    .secondary-content {
         max-width: 100%;
     }
     header nav {
-  max-width: 100%;
+        max-width: 100%;
     }
 
     footer {
-max-width: 100%;
+        max-width: 100%;
     }
-    
+
 }
-@media only screen and (max-width:320px){
- .main{
+
+@media only screen and (max-width:320px) {
+    .main {
         max-width: 87%;
         height: 780px;
 
     }
-       .main .searchsection{
+    .main .searchsection {
         max-width: 100%;
     }
-     .main ol{
+    .main ol {
         width: 80%;
     }
-    .maintext{
+    .maintext {
         max-width: 90%;
     }
-       .main-links{
+    .main-links {
         max-width: 90%;
 
     }
-    .input{
-                width: 23%;
+    .input {
+        width: 23%;
     }
-    #search-button{
+    #search-button {
         width: 30%;
     }
-     .secondary-content .firstpart
-    {
+    .secondary-content .firstpart {
         max-width: 48%;
-/*        width: 35%;*/
+        /*        width: 35%;*/
     }
-      .secondary-content .secondpart
-    {
-                max-width: 48%;
-/*        width: 35%;*/
+    .secondary-content .secondpart {
+        max-width: 48%;
+        /*        width: 35%;*/
     }
-    .secondary-content{
+    .secondary-content {
         max-width: 100%;
     }
     header nav {
-  max-width: 100%;
+        max-width: 100%;
     }
 
     footer {
-max-width: 100%;
+        max-width: 100%;
     }
 }
