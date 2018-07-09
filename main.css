@@ -45,6 +45,14 @@
 
 /*general styles*/
 
+html {
+    background: rgba(0, 0, 0, 0) url("bg-image.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*    background-image: url('digital.jpg');*/
@@ -77,6 +85,7 @@ input {
     border-radius: 4px;
     border: 1px black solid;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 input:hover {
@@ -137,7 +146,6 @@ header nav li a:hover {
     margin-right: auto;
     margin-left: auto;
     margin-top: 45px;
-    ;
     width: 610px;
     border: 3px #CCCbCC;
     margin-bottom: 20px;
@@ -151,14 +159,10 @@ header nav li a:hover {
 }
 
 .main {
-    width: 1020px;
-    margin: auto;
     margin: auto;
     padding: 2px;
-    height: 28em;
     border-bottom: 10px;
     border-top: 5px;
-    background-image: url("ip-world.jpg");
     background-position: center;
     margin-top: 32px;
 }
@@ -196,10 +200,11 @@ header nav li a:hover {
     font-size: 20px;
     color: ghostwhite;
     background-image: url("transparent.jpg");
-    width: 60%;
+    width: 610px;
     padding: 2rem;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 0.5rem;
 }
 
 .main .searchsection p {
@@ -207,13 +212,13 @@ header nav li a:hover {
 }
 
 .main-links {
-    margin-bottom: 20px;
     width: 610px;
-    margin: 13px auto;
-
-
+    margin: 60px auto;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
+/*
 .main-links .info {
     width: 49.5%;
     background-image: url(transparent.jpg);
@@ -221,13 +226,11 @@ header nav li a:hover {
     padding: 2rem;
     display: inline-block;
     vertical-align: top;
-    background: #4d0000;
-    background: linear-gradient(to right, #a65959 0%, #660000 100%);
 
 }
+*/
 
-
-
+/*
 .main-links .shield {
     width: 49.5%;
     background-image: url(transparent.jpg);
@@ -236,9 +239,8 @@ header nav li a:hover {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #a65959 0%, #660000 100%);
-
 }
+*/
 
 .main-links .info a,
 .main-links .shield a {
@@ -268,11 +270,14 @@ header nav li a:hover {
     color: RGB(251, 255, 254);
     height: auto;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .secondary-content .firstpart,
-.secondary-content .secondpart {
-    width: 49.5%;
+.secondary-content .secondpart,
+.main-links .info,
+.main-links .shield {
+    width: 47.5%;
     background-image: url(transparent.jpg);
     border-radius: 0.5rem;
     padding: 2rem;
@@ -280,6 +285,19 @@ header nav li a:hover {
     vertical-align: top;
     height: 250px;
     overflow-y: auto;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
+
+.secondary-content .firstpart,
+.secondary-content .secondpart {
+    text-align: left;
+}
+
+.main-links .info,
+.main-links .shield {
+    height: auto;
+    overflow-y: visible;
 }
 
 .secondary-content .firstpart h3,
@@ -300,12 +318,14 @@ header nav li a:hover {
 /*footer styles */
 
 footer {
-    background-color: darkblue;
+    background-image: url(transparent.jpg);
     /* height: 10px; */
-    width: 100%;
+    width: 610px;
     padding: 15px;
     text-align: center;
     /* color: white; */
+    margin: 0 auto;
+    border-radius: 0.5rem;
 }
 
 footer a {
@@ -333,25 +353,24 @@ footer li {
         width: 1026px;
     }
 */
-    .main {
-        width: 80%;
-    }
-    .maintext {
-        max-width: 80%;
-    }
-    .main .searchsection {
-        max-width: 100%;
-    }
-    .main-links {
-        max-width: 80%;
-
-    }
     header nav {
         background: darkblue;
         height: 37px;
         /*        width: 1020px;*/
         margin: 0px 0px 0px 0px;
     }
+
+    .main-links,
+    .secondary-content,
+    footer,
+    .maintext,
+    .main {
+        max-width: 80%;
+    }
+    .main .searchsection {
+        max-width: 100%;
+    }
+
 
     footer {
         /*        width: 1020px;*/
@@ -360,34 +379,7 @@ footer li {
     }
 }
 
-@media only screen and (max-width:840px) {
-    .main {
-        width: 80%;
-        height: 550px;
-    }
-    .maintext {
-        max-width: 80%;
-    }
-    .main .searchsection {
-        max-width: 100%;
-    }
-    .main-links {
-        max-width: 80%;
-
-    }
-    header nav {
-        background: darkblue;
-        height: 37px;
-        /*        width: 1020px;*/
-        margin: 0px 0px 0px 0px;
-    }
-
-    footer {
-        /*        width: 1020px;*/
-        margin-top: 320px;
-
-    }
-}
+@media only screen and (max-width:840px) {}
 
 
 @media only screen and (max-width:630px) {
@@ -398,49 +390,14 @@ footer li {
         width: 1026px;
     }
 */
-    .main {
-        width: 80%;
-        height: 600px;
-    }
-    .maintext {
-        max-width: 80%;
-    }
     .main ol {
         width: 90%;
     }
-    .main .searchsection {
-        max-width: 90%;
-    }
-    .main-links {
-        max-width: 80%;
 
+    .main-links .info img,
+    .main-links .shield img {
+        display: none;
     }
-    .main-links .info {
-        width: 40%;
-
-    }
-
-    .main-links .shield {
-        width: 50%;
-    }
-    /*
-    .secondary-content{
-        max-width: 80%;
-    }
-*/
-    header nav {
-        background: darkblue;
-        height: 37px;
-        /*        width: 1020px;*/
-        margin: 0px 0px 0px 0px;
-    }
-
-    footer {
-        /*        width: 1020px;*/
-        margin-top: 320px;
-
-    }
-
 }
 
 
@@ -454,34 +411,12 @@ footer li {
         width: 1026px;
     }
 */
+    .main-links,
+    .secondary-content,
+    footer,
+    .maintext,
     .main {
-        max-width: 87%;
-        height: 650px;
-
-    }
-    .main .searchsection {
-        max-width: 100%;
-    }
-    .main ol {
-        width: 80%;
-    }
-    .maintext {
-        max-width: 90%;
-    }
-    .main-links {
-        max-width: 90%;
-
-    }
-    .secondary-content .firstpart {
-        max-width: 48%;
-        /*        width: 35%;*/
-    }
-    .secondary-content .secondpart {
-        max-width: 48%;
-        /*        width: 35%;*/
-    }
-    .secondary-content {
-        max-width: 100%;
+        max-width: 95%;
     }
     header nav {
         max-width: 100%;
@@ -528,13 +463,7 @@ footer li {
     .secondary-content {
         max-width: 100%;
     }
-    header nav {
-        max-width: 100%;
-    }
 
-    footer {
-        max-width: 100%;
-    }
 
 }
 
